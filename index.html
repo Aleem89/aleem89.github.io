@@ -1,533 +1,311 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="These are the early iterations of Aleem Sattar's portfolio website. Stay tuned for more updates" />
-        <meta name="author" content="Aleem Sattar" />
-        <title>Developer - Aleem Sattar</title>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-    </head>
-    <body id="page-top">
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
-            <div class="container">
-                <a class="navbar-brand" href="#page-top">Aleem Sattar</a>
-                <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    Menu
-                    <i class="fas fa-bars"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">Portfolio</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">About</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <!-- Masthead-->
-        <header class="masthead bg-primary text-white text-center">
-            <div class="container d-flex align-items-center flex-column">
-                <!-- Happy day of week text-->
-                <h2 class="masthead-day"></h2>
-                <!-- Masthead Avatar Image-->
-                <div class="image-container">
-                    <img class="masthead-avatar mb-5" src="assets/img/aleemavatar.png" alt="Aleem avatar" />
-                </div>
-                <!-- Masthead Heading-->
-                <h1 class="masthead-heading text-uppercase mb-0">Aleem Sattar</h1>
-                <!-- Icon Divider-->
-                <div class="divider-custom divider-light">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-                <!-- Masthead Subheading-->
-                <p class="masthead-subheading font-weight-light mb-0">Web Designer</p>
-            </div>
-        </header>
-        <!-- Portfolio Section-->
-        <section class="page-section portfolio" id="portfolio">
-            <div class="container">
-                <!-- Portfolio Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Portfolio</h2>
-                <!-- Icon Divider-->
-                <div class="divider-custom">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-                <!-- Portfolio Grid Items-->
-                <div class="row justify-content-center">
-                    <!-- Portfolio Item 1-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/betterclock.jpg" alt="clock picture" />
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 2-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/cake.png" alt="..." />
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 3-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/circus.png" alt="..." />
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 4-->
-                    <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal4">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/game.png" alt="..." />
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 5-->
-                    <div class="col-md-6 col-lg-4 mb-5 mb-md-0">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal5">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/safe.png" alt="..." />
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 6-->
-                    <div class="col-md-6 col-lg-4">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal6">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/submarine.png" alt="..." />
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- About Section-->
-        <section class="page-section bg-primary text-white mb-0" id="about">
-            <div class="container">
-                <!-- About Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-white">About</h2>
-                <!-- Icon Divider-->
-                <div class="divider-custom divider-light">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-                <!-- About Section Content-->
-                <div class="row">
-                    <div class="col-lg-4 ms-auto"><p class="lead">Hi, I'm Aleem. </p></div>
-                    <div class="col-lg-4 me-auto"><p class="lead"></p><div>
-                </div>
-                <!-- About Section Button-->
-                <div class="text-center mt-4">
-                    <a class="btn btn-xl btn-outline-light" href="https://startbootstrap.com/theme/freelancer/">
-                        <i class="fas fa-download me-2"></i>
-                        Free Download!
-                    </a>
-                </div>
-            </div>
-        </section>
-        <!-- Contact Section-->
-        <section class="page-section" id="contact">
-            <div class="container">
-                <!-- Contact Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contact Me</h2>
-                <!-- Icon Divider-->
-                <div class="divider-custom">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-                <!-- Contact Section Form-->
-                <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xgeglvpo" method="post">
-                    <fieldset id="fs-frm-inputs">
-                      <label for="full-name">Full Name</label>
-                      <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
-                      <label for="email-address">Email Address</label>
-                      <input type="email" name="_replyto" id="email-address" placeholder="email@domain.com" required="">
-                      <label for="message">Message</label>
-                      <textarea rows="5" name="message" id="message" placeholder="Send Aleem a message!" required=""></textarea>
-                      <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
-                    </fieldset>
-                    <input type="submit" value="Submit">
-                  </form><style>/* reset */
-                  #fs-frm input,
-                  #fs-frm select,
-                  #fs-frm textarea,
-                  #fs-frm fieldset,
-                  #fs-frm optgroup,
-                  #fs-frm label,
-                  #fs-frm #card-element:disabled {
-                    font-family: inherit;
-                    font-size: 100%;
-                    color: inherit;
-                    border: none;
-                    border-radius: 0;
-                    display: block;
-                    width: 100%;
-                    padding: 0;
-                    margin: 0;
-                    appearance: none;
-                    -webkit-appearance: none;
-                    -moz-appearance: none;
-                  }
-                  #fs-frm label,
-                  #fs-frm legend,
-                  #fs-frm ::placeholder {
-                    font-size: .825rem;
-                    margin-bottom: .5rem;
-                    padding-top: .2rem;
-                    display: flex;
-                    align-items: baseline;
-                  }
-                  
-                  /* border, padding, margin, width */
-                  #fs-frm input,
-                  #fs-frm select,
-                  #fs-frm textarea,
-                  #fs-frm #card-element {
-                    border: 1px solid rgba(0,0,0,0.2);
-                    background-color: rgba(255,255,255,0.9);
-                    padding: .75em 1rem;
-                    margin-bottom: 1.5rem;
-                  }
-                  #fs-frm input:focus,
-                  #fs-frm select:focus,
-                  #fs-frm textarea:focus {
-                    background-color: rgb(26, 188, 156);
-                    outline-style: solid;
-                    outline-width: thin;
-                    outline-color: gray;
-                    outline-offset: -1px;
-                  }
-                  #fs-frm [type="text"],
-                  #fs-frm [type="email"] {
-                    width: 100%;
-                  }
-                  #fs-frm [type="button"],
-                  #fs-frm [type="submit"],
-                  #fs-frm [type="reset"] {
-                    width: auto;
-                    cursor: pointer;
-                    -webkit-appearance: button;
-                    -moz-appearance: button;
-                    appearance: button;
-                  }
-                  #fs-frm [type="button"]:focus,
-                  #fs-frm [type="submit"]:focus,
-                  #fs-frm [type="reset"]:focus {
-                    outline: none;
-                  }
-                  #fs-frm [type="submit"],
-                  #fs-frm [type="reset"] {
-                    margin-bottom: 0;
-                  }
-                  #fs-frm select {
-                    text-transform: none;
-                  }
-                  
-                  #fs-frm [type="checkbox"] {
-                    -webkit-appearance: checkbox;
-                    -moz-appearance: checkbox;
-                    appearance: checkbox;
-                    display: inline-block;
-                    width: auto;
-                    margin: 0 .5em 0 0 !important;
-                  }
-                  
-                  #fs-frm [type="radio"] {
-                    -webkit-appearance: radio;
-                    -moz-appearance: radio;
-                    appearance: radio;
-                  }
-                  
-                  /* address, locale */
-                  #fs-frm fieldset.locale input[name="city"],
-                  #fs-frm fieldset.locale select[name="state"],
-                  #fs-frm fieldset.locale input[name="postal-code"] {
-                    display: inline;
-                  }
-                  #fs-frm fieldset.locale input[name="city"] {
-                    width: 52%;
-                  }
-                  #fs-frm fieldset.locale select[name="state"],
-                  #fs-frm fieldset.locale input[name="postal-code"] {
-                    width: 20%;
-                  }
-                  #fs-frm fieldset.locale input[name="city"],
-                  #fs-frm fieldset.locale select[name="state"] {
-                    margin-right: 3%;
-                  }
-                  </style>
-                    
-        </section>
-        <!-- Footer-->
-        <footer class="footer text-center">
-            <div class="container">
-                <div class="row">
-                    <!-- Footer Location-->
-                    <div class="col-lg-4 mb-5 mb-lg-0">
-                        <h4 class="text-uppercase mb-4">Location</h4>
-                        <p class="lead mb-0">
-                            United States of America
-                            <br />
-                            🦅 
-                        </p>
-                    </div>
-                    <!-- Footer Social Icons-->
-                    <div class="col-lg-4 mb-5 mb-lg-0">
-                        <h4 id="dayOfWeek"> class="text-uppercase mb-4"></h4>
-                        <!-- <a class="btn btn-outline-light btn-social mx-1" href="https://www.facebook.com/pakishag" target="_blank"><i class="fab fa-fw fa-facebook-f"></i></a> -->
-                        <!-- <a class="btn btn-outline-light btn-social mx-1" href="https://twitter.com/pakishag" target="_blank"><i class="fab fa-fw fa-twitter"></i></a> -->
-                        <!-- <a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/aleem-s-381985147/" target="_blank"><i class="fab fa-fw fa-linkedin-in"></i></a> -->
-                        <!-- a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-dribbble"></i></a> -->
-                    </div>
-                    <!-- Footer About Text-->
-                    <div class="col-lg-4">
-                        <h4 class="text-uppercase mb-4">About Freelancer</h4>
-                        <p class="lead mb-0">
-                            Freelance is a free to use, MIT licensed Bootstrap theme created by
-                            <a href="http://startbootstrap.com">Start Bootstrap</a>
-                            .
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </footer>
-        <!-- Copyright Section-->
-        <div class="copyright py-4 text-center text-white">
-            <div class="container"><small>Copyright &copy; Aleem's bored</small></div>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Aleem Sattar — Software Engineer, Data Platform</title>
+  <meta name="description" content="Aleem Sattar is a software engineer in Dallas–Fort Worth building production data pipelines, PostgreSQL warehouses, and Apache Superset platforms on Python and Kubernetes. Apache Superset contributor." />
+  <meta name="author" content="Aleem Sattar" />
+  <meta name="theme-color" content="#0b0f17" />
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+  <link rel="canonical" href="https://aleem89.github.io/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Aleem Sattar — Software Engineer, Data Platform" />
+  <meta property="og:description" content="Production data pipelines, PostgreSQL modeling, Apache Superset, and Kubernetes. Dallas–Fort Worth · open to Data Engineer and Python roles." />
+  <meta property="og:url" content="https://aleem89.github.io/" />
+  <meta property="og:image" content="https://aleem89.github.io/assets/img/aleemavatar.png" />
+  <meta name="twitter:card" content="summary" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Aleem Sattar",
+    "jobTitle": "Software Engineer",
+    "worksFor": { "@type": "Organization", "name": "Savantly LLC" },
+    "address": { "@type": "PostalAddress", "addressRegion": "TX", "addressLocality": "Dallas–Fort Worth" },
+    "url": "https://aleem89.github.io/",
+    "email": "mailto:aleem.sattar@gmail.com",
+    "sameAs": ["https://github.com/Aleem89", "https://www.linkedin.com/in/aleem-s-381985147"],
+    "knowsAbout": ["Python", "PostgreSQL", "Apache Superset", "Kubernetes", "Data Engineering", "OIDC"]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#work">Skip to content</a>
+  <div class="bg" aria-hidden="true"></div>
+
+  <header class="nav" id="nav">
+    <div class="wrap nav-inner">
+      <a class="brand" href="#top"><span class="brand-dot"></span>aleem<span class="brand-dim">.sattar</span></a>
+      <nav class="nav-links" aria-label="Sections">
+        <a href="#work">Work</a>
+        <a href="#experience">Experience</a>
+        <a href="#open-source">Open Source</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a class="btn btn-sm" href="assets/Aleem_Sattar_Resume.pdf" download>Resume <span aria-hidden="true">↓</span></a>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- Hero -->
+    <section class="hero wrap">
+      <div class="hero-text">
+        <div class="status" id="status">
+          <span class="pulse" aria-hidden="true"></span>
+          <span id="dayPhrase">Hello!</span>
+          <span class="sep">·</span>
+          <time id="todayDate" datetime=""></time>
+          <span class="sep">·</span>
+          <span id="localTime" title="Central Time (Dallas)"></span>
         </div>
-        <!-- Portfolio Modals-->
-        <!-- Portfolio Modal 1-->
-        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModal1" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Counter</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <label id="countLabel">0</label><br>
-                                    <div id="btnContainer">
-                                        <button id="decreaseBtn" class="buttons">Decrease</button>
-                                        <button id="resetBtn" class="buttons">Reset</button>
-                                        <button id="increaseBtn" class="buttons">Increase</button><br><br>
-                                    </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <!-- <img class="img-fluid rounded mb-5" src="assets/img/portfolio/cabin.png" alt="..." /> -->
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">This is a practice counter app</p>
-                                    <button class="btn btn-primary" data-bs-dismiss="modal">
-                                        <i class="fas fa-xmark fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <h1>Aleem Sattar</h1>
+        <p class="tagline">Software engineer building <span class="hl">production data platforms</span> on Python, PostgreSQL, and Kubernetes.</p>
+        <p class="lede">
+          At Savantly I own the ingestion pipelines, warehouse model, Apache Superset platform, and identity layer behind a
+          multi-brand franchisor's analytics. Apache Superset contributor. Based in Dallas–Fort Worth, open to Data Engineer
+          and Python/backend roles, remote or DFW.
+        </p>
+        <div class="cta">
+          <a class="btn btn-primary" href="#work">See the work</a>
+          <a class="btn" href="https://github.com/Aleem89" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn" href="https://www.linkedin.com/in/aleem-s-381985147" target="_blank" rel="noopener">LinkedIn</a>
+          <button class="btn" id="copyEmail" type="button" data-email="aleem.sattar@gmail.com">Copy email</button>
         </div>
-        <!-- Portfolio Modal 2-->
-        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" aria-labelledby="portfolioModal2" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Tasty Cake</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/cake.png" alt="..." />
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4"></p>
-                                    <button class="btn btn-primary" data-bs-dismiss="modal">
-                                        <i class="fas fa-xmark fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      </div>
+      <div class="hero-art">
+        <div class="ring">
+          <img src="assets/img/aleemavatar.png" alt="Illustrated avatar of Aleem Sattar" width="320" height="320" />
         </div>
-        <!-- Portfolio Modal 3-->
-        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" aria-labelledby="portfolioModal3" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Circus Tent</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/circus.png" alt="..." />
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi sequi rem possimus quae officiis nihil, nobis reiciendis similique id ab alias, ipsum sapiente quam recusandae unde dolorum libero sit assumenda?</p>
-                                    <button class="btn btn-primary" data-bs-dismiss="modal">
-                                        <i class="fas fa-xmark fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <ul class="float-tags" aria-hidden="true">
+          <li>Python</li><li>PostgreSQL</li><li>Superset</li><li>AKS</li><li>Entra ID</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="wrap stats reveal" aria-label="Highlights">
+      <div class="stat"><strong>8</strong><span>production data pipelines</span></div>
+      <div class="stat"><strong>60+</strong><span>SQL views &amp; materialized views</span></div>
+      <div class="stat"><strong>200+</strong><span>franchise locations served</span></div>
+      <div class="stat"><strong>97%</strong><span>faster scorecard loads (7.3 s → 0.2 s)</span></div>
+      <div class="stat"><strong>2</strong><span>merged Apache Superset PRs</span></div>
+    </section>
+
+    <!-- Work -->
+    <section class="wrap section" id="work">
+      <header class="section-head reveal">
+        <p class="eyebrow">Selected work</p>
+        <h2>What I've built and run in production</h2>
+        <p class="muted">Everything below is live for a multi-brand franchisor with 200+ locations. Problem, what I did, what changed.</p>
+      </header>
+
+      <div class="grid">
+        <article class="card reveal">
+          <div class="card-top"><span class="num">01</span><h3>Franchise analytics warehouse</h3></div>
+          <p>Monthly financial and marketing reporting for two brands was hand-assembled from vendor exports. I built the ingestion and the model that replaced it.</p>
+          <ul>
+            <li>8 production pipelines: 4 Python sync services (Qvinci financials, ServiceTitan, Birdeye reviews, GBBIS territories) plus Airbyte syncs, into PostgreSQL with idempotent snapshot loads.</li>
+            <li>Dimensional model with 60+ views and materialized views behind same-store sales, TTM revenue, answer rate, and territory counts; 25+ Alembic migrations.</li>
+            <li>Runs as Helm CronJobs on AKS with GitHub Actions CI/CD and sealed secrets. Replaced ~30 hours a month of spreadsheet consolidation.</li>
+          </ul>
+          <div class="tags"><span>Python</span><span>PostgreSQL</span><span>Alembic</span><span>Airbyte</span><span>Helm</span><span>AKS</span></div>
+        </article>
+
+        <article class="card reveal">
+          <div class="card-top"><span class="num">02</span><h3>Apache Superset platform</h3></div>
+          <p>I own the production BI platform: 31 dashboards and 24 SSO users, self-hosted instead of per-seat licensing.</p>
+          <ul>
+            <li>Upgraded 5.0 → 6.1 with zero downtime through staged dev → prod PRs, dataset backups, and a cache warm-up job.</li>
+            <li>Deployed Superset's MCP server so LLM agents can query dashboards and SQL under Entra-issued tokens.</li>
+            <li>Rehearsed the 7.0 release candidate on dev, found a regression, and fixed it upstream the same day (see Open Source).</li>
+          </ul>
+          <div class="tags"><span>Superset</span><span>Kubernetes</span><span>Celery/Redis</span><span>MCP</span><span>Entra ID</span></div>
+        </article>
+
+        <article class="card reveal">
+          <div class="card-top"><span class="num">03</span><h3>Scorecard app: 7.3 s → 0.2 s</h3></div>
+          <p>A Streamlit scorecard for franchise owners was slow enough that people stopped opening it.</p>
+          <ul>
+            <li>Precomputed revenue and GA4 attribution into materialized views and collapsed duplicate query passes: Overview 7.3 s → 0.2 s, master view 1.9 s → 35 ms.</li>
+            <li>Fronted it with OAuth2-proxy: Entra security-group → admin roles and row-level security scoping every query to the user's locations.</li>
+            <li>Migrated hosting from Railway onto AKS for a single deploy path.</li>
+          </ul>
+          <div class="tags"><span>Streamlit</span><span>PostgreSQL MVs</span><span>OAuth2-proxy</span><span>Plotly</span></div>
+        </article>
+
+        <article class="card reveal">
+          <div class="card-top"><span class="num">04</span><h3>Identity: Keycloak → Entra ID</h3></div>
+          <p>Consolidated three separate logins onto the client's Microsoft tenant.</p>
+          <ul>
+            <li>Migrated Superset auth from Keycloak to Entra ID with dashboard RBAC and forced re-auth via cookie rotation.</li>
+            <li>Extended the WordPress OpenID Connect plugin with a custom MU-plugin for group → role mapping; rolled SSO out across 8 brand sites.</li>
+            <li>Standardized those 8 sites on one Docker base image with GitOps deploys, so a security patch is one update instead of eight.</li>
+          </ul>
+          <div class="tags"><span>OIDC</span><span>Entra ID</span><span>Keycloak</span><span>WordPress</span><span>Docker</span></div>
+        </article>
+
+        <article class="card reveal">
+          <div class="card-top"><span class="num">05</span><h3>Live territory metrics</h3></div>
+          <p>Territory open/closed counts came from a truncate-and-reload table that was up to a month stale and had already produced a client-visible miscount.</p>
+          <ul>
+            <li>Replaced the table and its two populate scripts with a single live SQL view over HubSpot data, keeping every downstream Superset view's contract intact.</li>
+            <li>Deleted 1,070 lines of ETL; counts are now current with under 10 ms of added query cost.</li>
+            <li>Reconciled the metric definitions with the client's finance team and documented them in an OpenMetadata glossary with lineage.</li>
+          </ul>
+          <div class="tags"><span>SQL</span><span>HubSpot</span><span>OpenMetadata</span><span>Alembic</span></div>
+        </article>
+
+        <article class="card reveal">
+          <div class="card-top"><span class="num">06</span><h3>HubSpot → Yext webhook service</h3></div>
+          <p>Location address and business-info changes were being re-keyed by hand into the listings platform.</p>
+          <ul>
+            <li>Built a FastAPI service with async background tasks and payload validation that propagates changes in near real time for 200+ locations.</li>
+            <li>Added persistent gclid/UTM attribution for Gravity Forms across the brand sites to restore Google Ads ROI visibility.</li>
+          </ul>
+          <div class="tags"><span>FastAPI</span><span>Webhooks</span><span>Pydantic</span><span>HubSpot</span><span>Yext</span></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="wrap section" id="experience">
+      <header class="section-head reveal">
+        <p class="eyebrow">Experience</p>
+        <h2>Where I've worked</h2>
+      </header>
+
+      <ol class="timeline">
+        <li class="tl-item reveal">
+          <div class="tl-meta"><span class="tl-dates">Jul 2025 – Present</span><span class="tl-loc">Remote · DFW</span></div>
+          <div class="tl-body">
+            <h3>Software Engineer <span class="at">Savantly LLC</span></h3>
+            <p class="muted small">Consultancy; embedded on a multi-brand franchisor's data platform and web properties alongside a senior engineer and contractors. Agile sprints, everything through reviewed PRs.</p>
+            <ul>
+              <li>Build and operate 8 production data pipelines into a PostgreSQL warehouse; designed the dimensional model and 60+ views/MVs for 200+ locations.</li>
+              <li>Own the production Apache Superset platform: 5.0 → 6.1 zero-downtime upgrade, MCP server, 7.0 release-candidate rehearsal.</li>
+              <li>Deploy everything to Azure Kubernetes Service with Helm CronJobs, GitHub Actions CI/CD, and sealed secrets.</li>
+              <li>Cut scorecard load times ~97%; led a phased location-mapping cutover with zero reporting regressions.</li>
+              <li>Migrated auth from Keycloak to Microsoft Entra ID; shipped OIDC SSO across 8 WordPress sites.</li>
+              <li>Reconcile KPI definitions with client finance and marketing stakeholders; publish an OpenMetadata glossary with table → chart lineage.</li>
+            </ul>
+          </div>
+        </li>
+        <li class="tl-item reveal">
+          <div class="tl-meta"><span class="tl-dates">Apr 2024 – Apr 2025</span><span class="tl-loc">Fort Worth, TX</span></div>
+          <div class="tl-body">
+            <h3>Technical Support Engineer (SaaS) <span class="at">Omnicell</span></h3>
+            <ul>
+              <li>Technical contact for 130+ pharmacy SaaS accounts; closed 95% of Salesforce cases within the 24-hour SLA.</li>
+              <li>Streamlined SFTP data-exchange onboarding (−20% setup time); reproduced and escalated defects to engineering in Jira.</li>
+            </ul>
+          </div>
+        </li>
+        <li class="tl-item reveal">
+          <div class="tl-meta"><span class="tl-dates">Jun 2019 – Apr 2023</span><span class="tl-loc">North Richland Hills, TX</span></div>
+          <div class="tl-body">
+            <h3>Team Lead, Platinum Team <span class="at">Santander Consumer USA</span></h3>
+            <ul>
+              <li>Escalation lead for regulated accounts (bankruptcy, SCRA, credit disputes); 95%+ CSAT, 90%+ first-contact resolution; mentored junior reps.</li>
+            </ul>
+          </div>
+        </li>
+        <li class="tl-item reveal">
+          <div class="tl-meta"><span class="tl-dates">2008 – 2011</span><span class="tl-loc">Richardson, TX</span></div>
+          <div class="tl-body">
+            <h3>B.A., Biology, cum laude <span class="at">University of Texas at Dallas</span></h3>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- Open source -->
+    <section class="wrap section" id="open-source">
+      <header class="section-head reveal">
+        <p class="eyebrow">Open source</p>
+        <h2>Apache Superset contributor</h2>
+        <p class="muted">While rehearsing our 7.0 upgrade on the second release candidate, a pivot table started rendering blank cells. Same day: issue, release-vote note, fix, merge.</p>
+      </header>
+
+      <div class="oss">
+        <ol class="oss-steps reveal" aria-label="Timeline of the fix on 17 Oct 2026">
+          <li><span class="t">04:09 UTC</span><span>Filed <a href="https://github.com/apache/superset/issues/45405" target="_blank" rel="noopener">issue #45405</a>: SIMPLE MIN/MAX over text columns dropped by the client-side additive fast-path, with a safe workaround for upgraders.</span></li>
+          <li><span class="t">05:55 UTC</span><span>Opened <a href="https://github.com/apache/superset/pull/45408" target="_blank" rel="noopener">PR #45408</a>: gate the fast-path on numeric column type, plus a regression test. Flagged it on the 7.0.0 RC2 vote thread.</span></li>
+          <li><span class="t">20:29 UTC</span><span>Merged after review by a Superset PMC member. 5 files, +70 / −35.</span></li>
+        </ol>
+        <div class="oss-cards reveal">
+          <a class="mini" href="https://github.com/apache/superset/pull/45408" target="_blank" rel="noopener">
+            <span class="mini-k">apache/superset #45408</span>
+            <span class="mini-v">fix(pivot-table): keep MIN/MAX of non-numeric columns off the additive fast-path</span>
+            <span class="mini-s">merged · Oct 2026</span>
+          </a>
+          <a class="mini" href="https://github.com/apache/superset/pull/44108" target="_blank" rel="noopener">
+            <span class="mini-k">apache/superset #44108</span>
+            <span class="mini-v">docs: add Savantly to "users in the wild"</span>
+            <span class="mini-s">merged · 2026</span>
+          </a>
         </div>
-        <!-- Portfolio Modal 4-->
-        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" aria-labelledby="portfolioModal4" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Controller</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/game.png" alt="..." />
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4"></p>
-                                    <button class="btn btn-primary" data-bs-dismiss="modal">
-                                        <i class="fas fa-xmark fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="wrap section" id="skills">
+      <header class="section-head reveal">
+        <p class="eyebrow">Skills</p>
+        <h2>Tools I use in production</h2>
+      </header>
+      <div class="skills reveal">
+        <div class="skill-row"><h3>Languages</h3><div class="tags"><span>Python</span><span>SQL</span><span>Bash</span><span>TypeScript</span><span>PHP</span></div></div>
+        <div class="skill-row"><h3>Data &amp; analytics</h3><div class="tags"><span>PostgreSQL</span><span>Materialized views</span><span>Dimensional modeling</span><span>SQLAlchemy</span><span>Alembic</span><span>pandas</span><span>PySpark</span><span>Airbyte</span><span>Apache Superset</span><span>OpenMetadata</span><span>Streamlit</span></div></div>
+        <div class="skill-row"><h3>Platform &amp; DevOps</h3><div class="tags"><span>Docker</span><span>Kubernetes (AKS)</span><span>Helm</span><span>GitHub Actions</span><span>Sealed Secrets</span><span>Azure CLI</span><span>Linux</span></div></div>
+        <div class="skill-row"><h3>Backend &amp; integration</h3><div class="tags"><span>FastAPI</span><span>REST API clients</span><span>Webhooks</span><span>async I/O</span><span>Pydantic</span><span>pytest</span><span>Click</span></div></div>
+        <div class="skill-row"><h3>Identity &amp; access</h3><div class="tags"><span>OIDC / OAuth2</span><span>Microsoft Entra ID</span><span>Keycloak</span><span>OAuth2-proxy</span><span>RBAC</span><span>Row-level security</span></div></div>
+        <div class="skill-row"><h3>Practices</h3><div class="tags"><span>Agile</span><span>PR code review</span><span>Runbooks</span><span>Data reconciliation</span><span>AI-assisted development (Claude Code, MCP)</span></div></div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="wrap section" id="contact">
+      <header class="section-head reveal">
+        <p class="eyebrow">Contact</p>
+        <h2>Let's talk</h2>
+        <p class="muted">Recruiters and hiring managers: the fastest route is email. I reply within a business day.</p>
+      </header>
+      <div class="contact reveal">
+        <div class="contact-links">
+          <a class="link-row" href="mailto:aleem.sattar@gmail.com"><span class="k">Email</span><span>aleem.sattar@gmail.com</span></a>
+          <a class="link-row" href="https://www.linkedin.com/in/aleem-s-381985147" target="_blank" rel="noopener"><span class="k">LinkedIn</span><span>linkedin.com/in/aleem-s-381985147</span></a>
+          <a class="link-row" href="https://github.com/Aleem89" target="_blank" rel="noopener"><span class="k">GitHub</span><span>github.com/Aleem89</span></a>
+          <a class="link-row" href="assets/Aleem_Sattar_Resume.pdf" download><span class="k">Resume</span><span>PDF, one page</span></a>
+          <p class="muted small">Dallas–Fort Worth, TX · remote or hybrid within DFW · open to W2 contract</p>
         </div>
-        <!-- Portfolio Modal 5-->
-        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" aria-labelledby="portfolioModal5" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Locked Safe</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/safe.png" alt="..." />
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4"></p>
-                                    <button class="btn btn-primary" data-bs-dismiss="modal">
-                                        <i class="fas fa-xmark fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Portfolio Modal 6-->
-        <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" aria-labelledby="portfolioModal6" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Submarine</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/submarine.png" alt="..." />
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4"></p>
-                                    <button class="btn btn-primary" data-bs-dismiss="modal">
-                                        <i class="fas fa-xmark fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <!-- * *                               SB Forms JS                               * *-->
-        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
-    </body>
+        <form class="form" id="contactForm" name="contact" accept-charset="utf-8" action="https://formspree.io/f/xgeglvpo" method="post">
+          <label><span>Name</span><input type="text" name="name" autocomplete="name" required /></label>
+          <label><span>Email</span><input type="email" name="_replyto" autocomplete="email" required /></label>
+          <label><span>Message</span><textarea name="message" rows="5" required></textarea></label>
+          <input type="hidden" name="_subject" value="aleem89.github.io contact" />
+          <button class="btn btn-primary" type="submit">Send message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <span>© <span id="year"></span> Aleem Sattar</span>
+      <span class="muted" id="footerPhrase"></span>
+      <span class="muted">Plain HTML, CSS, and JavaScript. No framework.</span>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
 </html>
