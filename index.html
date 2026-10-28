@@ -97,7 +97,7 @@
       <div class="stat"><strong>60+</strong><span>SQL views &amp; materialized views</span></div>
       <div class="stat"><strong>200+</strong><span>franchise locations served</span></div>
       <div class="stat"><strong>97%</strong><span>faster scorecard loads (7.3 s → 0.2 s)</span></div>
-      <div class="stat"><strong>2</strong><span>merged Apache Superset PRs</span></div>
+      <div class="stat"><strong>3</strong><span>merged Apache Superset PRs, 1 in review</span></div>
     </section>
 
     <!-- Work -->
@@ -125,10 +125,10 @@
           <p>I own the production BI platform: 31 dashboards and 24 SSO users, self-hosted instead of per-seat licensing.</p>
           <ul>
             <li>Upgraded 5.0 → 6.1 with zero downtime through staged dev → prod PRs, dataset backups, and a cache warm-up job.</li>
-            <li>Deployed Superset's MCP server so LLM agents can query dashboards and SQL under Entra-issued tokens.</li>
-            <li>Rehearsed the 7.0 release candidate on dev, found a regression, and fixed it upstream the same day (see Open Source).</li>
+            <li>Deployed Superset's MCP server and connected it, with the warehouse and other client systems, through an MCP gateway (Atrium), so the client asks business questions from Claude Desktop under per-user Entra identity and scoped read-only API keys.</li>
+            <li>Rehearsed the 7.0 release candidates on dev, found three regressions, and fixed them upstream (see Open Source).</li>
           </ul>
-          <div class="tags"><span>Superset</span><span>Kubernetes</span><span>Celery/Redis</span><span>MCP</span><span>Entra ID</span></div>
+          <div class="tags"><span>Superset</span><span>Kubernetes</span><span>MCP</span><span>Atrium gateway</span><span>Claude Desktop</span><span>Entra ID</span></div>
         </article>
 
         <article class="card reveal">
@@ -137,6 +137,7 @@
           <ul>
             <li>Precomputed revenue and GA4 attribution into materialized views and collapsed duplicate query passes: Overview 7.3 s → 0.2 s, master view 1.9 s → 35 ms.</li>
             <li>Fronted it with OAuth2-proxy: Entra security-group → admin roles and row-level security scoping every query to the user's locations.</li>
+            <li>Found the last loader still hitting the raw fact table at request time (41 s with a cold database cache) and moved it to a materialized view: 0.2 s.</li>
             <li>Migrated hosting from Railway onto AKS for a single deploy path.</li>
           </ul>
           <div class="tags"><span>Streamlit</span><span>PostgreSQL MVs</span><span>OAuth2-proxy</span><span>Plotly</span></div>
@@ -191,7 +192,7 @@
             <p class="muted small">Consultancy; embedded on a multi-brand franchisor's data platform and web properties alongside a senior engineer and contractors. Agile sprints, everything through reviewed PRs.</p>
             <ul>
               <li>Build and operate 8 production data pipelines into a PostgreSQL warehouse; designed the dimensional model and 60+ views/MVs for 200+ locations.</li>
-              <li>Own the production Apache Superset platform: 5.0 → 6.1 zero-downtime upgrade, MCP server, 7.0 release-candidate rehearsal.</li>
+              <li>Own the production Apache Superset platform: 5.0 → 6.1 zero-downtime upgrade, MCP server behind an MCP gateway (Atrium) for Claude Desktop, 7.0 release-candidate rehearsal.</li>
               <li>Deploy everything to Azure Kubernetes Service with Helm CronJobs, GitHub Actions CI/CD, and sealed secrets.</li>
               <li>Cut scorecard load times ~97%; led a phased location-mapping cutover with zero reporting regressions.</li>
               <li>Migrated auth from Keycloak to Microsoft Entra ID; shipped OIDC SSO across 8 WordPress sites.</li>
@@ -232,11 +233,11 @@
       <header class="section-head reveal">
         <p class="eyebrow">Open source</p>
         <h2>Apache Superset contributor</h2>
-        <p class="muted">While rehearsing our 7.0 upgrade on the second release candidate, a pivot table started rendering blank cells. Same day: issue, release-vote note, fix, merge.</p>
+        <p class="muted">Rehearsing our 7.0 upgrade on the release candidates turned up three frontend regressions. I fixed all three upstream in October 2026 (two merged, one in review): one I found and reported myself, two reported by a Superset committer.</p>
       </header>
 
       <div class="oss">
-        <ol class="oss-steps reveal" aria-label="Timeline of the fix on 17 Oct 2026">
+        <ol class="oss-steps reveal" aria-label="Timeline of the first fix on 17 Oct 2026">
           <li><span class="t">04:09 UTC</span><span>Filed <a href="https://github.com/apache/superset/issues/45405" target="_blank" rel="noopener">issue #45405</a>: SIMPLE MIN/MAX over text columns dropped by the client-side additive fast-path, with a safe workaround for upgraders.</span></li>
           <li><span class="t">05:55 UTC</span><span>Opened <a href="https://github.com/apache/superset/pull/45408" target="_blank" rel="noopener">PR #45408</a>: gate the fast-path on numeric column type, plus a regression test. Flagged it on the 7.0.0 RC2 vote thread.</span></li>
           <li><span class="t">20:29 UTC</span><span>Merged after review by a Superset PMC member. 5 files, +70 / −35.</span></li>
@@ -246,6 +247,16 @@
             <span class="mini-k">apache/superset #45408</span>
             <span class="mini-v">fix(pivot-table): keep MIN/MAX of non-numeric columns off the additive fast-path</span>
             <span class="mini-s">merged · Oct 2026</span>
+          </a>
+          <a class="mini" href="https://github.com/apache/superset/pull/45505" target="_blank" rel="noopener">
+            <span class="mini-k">apache/superset #45505</span>
+            <span class="mini-v">fix(echarts): restore series color markers in sanitized tooltips</span>
+            <span class="mini-s">merged · Oct 2026 · fixes #45483</span>
+          </a>
+          <a class="mini" href="https://github.com/apache/superset/pull/45648" target="_blank" rel="noopener">
+            <span class="mini-k">apache/superset #45648</span>
+            <span class="mini-v">fix(echarts): draw the series line style and symbol in the Plain Top/Bottom legend</span>
+            <span class="mini-s muted">in review · Oct 2026 · fixes #45488</span>
           </a>
           <a class="mini" href="https://github.com/apache/superset/pull/44108" target="_blank" rel="noopener">
             <span class="mini-k">apache/superset #44108</span>
@@ -268,7 +279,7 @@
         <div class="skill-row"><h3>Platform &amp; DevOps</h3><div class="tags"><span>Docker</span><span>Kubernetes (AKS)</span><span>Helm</span><span>GitHub Actions</span><span>Sealed Secrets</span><span>Azure CLI</span><span>Linux</span></div></div>
         <div class="skill-row"><h3>Backend &amp; integration</h3><div class="tags"><span>FastAPI</span><span>REST API clients</span><span>Webhooks</span><span>async I/O</span><span>Pydantic</span><span>pytest</span><span>Click</span></div></div>
         <div class="skill-row"><h3>Identity &amp; access</h3><div class="tags"><span>OIDC / OAuth2</span><span>Microsoft Entra ID</span><span>Keycloak</span><span>OAuth2-proxy</span><span>RBAC</span><span>Row-level security</span></div></div>
-        <div class="skill-row"><h3>Practices</h3><div class="tags"><span>Agile</span><span>PR code review</span><span>Runbooks</span><span>Data reconciliation</span><span>AI-assisted development (Claude Code, MCP)</span></div></div>
+        <div class="skill-row"><h3>Practices</h3><div class="tags"><span>Agile</span><span>PR code review</span><span>Runbooks</span><span>Data reconciliation</span><span>AI-assisted development (Claude Code, GitHub Copilot, oh-my-pi, MCP)</span></div></div>
       </div>
     </section>
 
